@@ -3,27 +3,27 @@ package com.michal.kuc;
 public class Square implements IFigure {
     private double side;
 
-    Square(double n){
+    Square(double n) {
         side = n;
     }
 
-    public double circumference(){
+    public double circumference() {
         return 4 * side;
     }
 
-    public double area(){
+    public double area() {
         return side * side;
     }
 
-    public void scaleUp(){
+    public void scaleUp() {
         side *= Math.sqrt(2);
     }
 
-    public void scaleDown(){
+    public void scaleDown() {
         side /= Math.sqrt(2);
     }
 
-    public String toString(){
+    public String toString() {
         return "Square " + String.format("%.2f", side);
     }
 }

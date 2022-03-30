@@ -4,29 +4,30 @@ public class Rectangle implements IFigure {
     private double sideA;
     private double sideB;
 
-    Rectangle(double nA, double nB){
+    Rectangle(double nA, double nB) {
         sideA = nA;
         sideB = nB;
     }
-    public double circumference(){
+
+    public double circumference() {
         return (2 * sideA) + (2 * sideB);
     }
 
-    public double area(){
+    public double area() {
         return sideA * sideB;
     }
 
-    public void scaleUp(){
+    public void scaleUp() {
         sideA *= Math.sqrt(2);
         sideB *= Math.sqrt(2);
     }
 
-    public void scaleDown(){
+    public void scaleDown() {
         sideA /= Math.sqrt(2);
         sideB /= Math.sqrt(2);
     }
 
-    public String toString(){
+    public String toString() {
         return "Rectangle: " + String.format("%.2f", sideA) + " x " + String.format("%.2f", sideB);
     }
 }

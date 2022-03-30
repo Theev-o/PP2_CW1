@@ -5,11 +5,11 @@ public class Circle implements IFigure {
     private double radius;
 
 
-    Circle(double n){
+    Circle(double n) {
         radius = n;
     }
 
-    public double circumference(){
+    public double circumference() {
         return Math.PI * 2 * radius;
     }
 
@@ -17,15 +17,15 @@ public class Circle implements IFigure {
         return Math.PI * radius * radius;
     }
 
-    public void scaleUp(){
+    public void scaleUp() {
         radius *= Math.sqrt(2);
     }
 
-    public void scaleDown(){
+    public void scaleDown() {
         radius /= Math.sqrt(2);
     }
 
-    public String toString(){
+    public String toString() {
         return "Circle: " + String.format("%.2f", radius);
     }
 }
